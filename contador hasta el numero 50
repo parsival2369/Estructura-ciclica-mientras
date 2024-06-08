@@ -1,0 +1,13 @@
+Algoritmo contadorhastaelnumero50
+	definir contador Como Entero
+	contador <- 1
+	
+	mientras (contador <= 50) hacer 
+		
+		escribir  contador 
+		
+		contador <- contador +1
+		
+	FinMientras
+	
+FinAlgoritmo
