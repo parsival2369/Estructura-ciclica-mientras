@@ -1,0 +1,16 @@
+Algoritmo ImprimirImpares
+	
+	definir numero como entero 
+	numero <-100
+	
+	mientras (numero >= 1) hacer 
+		
+		si (numero % 2 <> 0) entonces 
+			
+			escribir numero 
+			
+		FinSi
+		
+		numero <- numero -1
+		fin mientras 
+FinAlgoritmo
