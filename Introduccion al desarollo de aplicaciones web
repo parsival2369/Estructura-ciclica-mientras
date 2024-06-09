@@ -1,0 +1,31 @@
+Algoritmo multiplosde2o3
+	
+		
+		definir contadorMultiplo2, contadorMultiplo3 como entero
+		contadorMultiplo2 <- 0
+		contadorMultiplo3 <- 0
+		
+		
+		para i <- 1 hasta 100 con paso 1 hacer
+			
+			si (i % 2 = 0) o (i % 3 = 0) entonces
+				
+				escribir i
+				
+				si (i % 2 = 0) entonces
+					contadorMultiplo2 <- contadorMultiplo2 + 1
+				fin si
+				
+				si (i % 3 = 0) entonces
+					contadorMultiplo3 <- contadorMultiplo3 + 1
+				fin si
+			fin si
+		fin para
+		
+		
+		escribir "Cantidad de números múltiplos de 2: ", contadorMultiplo2
+		escribir "Cantidad de números múltiplos de 3: ", contadorMultiplo3
+
+
+		
+FinAlgoritmo
