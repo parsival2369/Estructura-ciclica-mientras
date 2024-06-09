@@ -1,0 +1,76 @@
+lgoritmo ParesYNones
+ 
+    Definir numeroUsuario, numeroMaquina, suma Como Entero
+    Definir opcionUsuario, opcionMaquina Como Caracter
+    Definir victoriasConsecutivas Como Entero
+	
+    victoriasConsecutivas <- 0
+	
+  
+    Funcion GenerarNumeroAleatorio() Como Entero
+       
+        Retornar Azar(10)
+FinFuncion
+
+Repetir
+
+	Escribir "Ingrese un número (1-10): "
+	Leer numeroUsuario
+	Escribir "Elija su opción (Par/Impar): "
+	Leer opcionUsuario
+	
+
+	Si opcionUsuario = "Par" Entonces
+		opcionMaquina <- "Impar"
+	SiNo
+		opcionMaquina <- "Par"
+	FinSi
+
+	numeroMaquina <- GenerarNumeroAleatorio()
+	
+
+	suma <- numeroUsuario + numeroMaquina
+	
+
+	Escribir "Número del usuario: ", numeroUsuario
+	Escribir "Número de la máquina: ", numeroMaquina
+	Escribir "Suma de los números: ", suma
+
+	Si suma % 2 = 0 Entonces
+		Escribir "La suma es Par"
+	
+		Si opcionUsuario = "Par" Entonces
+			victoriasConsecutivas <- victoriasConsecutivas + 1
+			Escribir "¡Ganaste esta ronda!"
+		SiNo
+			victoriasConsecutivas <- 0
+			Escribir "Perdiste esta ronda."
+		FinSi
+	SiNo
+		Escribir "La suma es Impar"
+	
+		Si opcionUsuario = "Impar" Entonces
+			victoriasConsecutivas <- victoriasConsecutivas + 1
+			Escribir "¡Ganaste esta ronda!"
+		SiNo
+			victoriasConsecutivas <- 0
+			Escribir "Perdiste esta ronda."
+		FinSi
+	FinSi
+	
+	Escribir "Victorias consecutivas del usuario: ", victoriasConsecutivas
+
+	Si victoriasConsecutivas = 3 Entonces
+		Escribir "¡Ganaste tres veces consecutivas! Fin del juego."
+	
+		Romper
+	FinSi
+	
+
+	Escribir "¿Quieres seguir jugando? (Si/No): "
+	Leer opcionUsuario
+Hasta Que opcionUsuario = "No"
+
+Escribir "Gracias por jugar"
+
+FinAlgoritmo
