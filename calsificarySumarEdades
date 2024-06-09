@@ -1,0 +1,50 @@
+Algoritmo ClasificarYSumarEdades
+    
+    Definir edad Como Entero
+    Definir sumaJovenAdulto, sumaAdulto, sumaAdultoMayor Como Entero
+	
+    
+    sumaJovenAdulto <- 0
+    sumaAdulto <- 0
+    sumaAdultoMayor <- 0
+	
+    
+    Repetir
+        
+        Escribir "Ingrese la edad de la persona: "
+        Leer edad
+		
+       
+        Si edad >= 18 Entonces
+            
+            Si edad >= 18 Y edad <= 25 Entonces
+                
+                sumaJovenAdulto <- sumaJovenAdulto + edad
+                Escribir "Categoría: Joven Adulto"
+            FinSi
+			
+            Si edad >= 26 Y edad <= 50 Entonces
+                
+                sumaAdulto <- sumaAdulto + edad
+                Escribir "Categoría: Adulto"
+            FinSi
+			
+            Si edad >= 51 Y edad <= 100 Entonces
+                
+                sumaAdultoMayor <- sumaAdultoMayor + edad
+                Escribir "Categoría: Adulto Mayor"
+            FinSi
+			
+			
+        SiNo
+            Escribir "La persona no es mayor de edad. Terminando el programa."
+        FinSi
+		
+    Hasta Que edad < 18
+	
+    
+    Escribir "Suma de edades de Joven Adulto (18-25): ", sumaJovenAdulto
+    Escribir "Suma de edades de Adulto (26-50): ", sumaAdulto
+    Escribir "Suma de edades de Adulto Mayor (51-100): ", sumaAdultoMayor
+	
+FinAlgoritmo
