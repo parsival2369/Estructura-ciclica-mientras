@@ -1,0 +1,23 @@
+Algoritmo IngresarCaracterCorrecto
+
+    Definir caracter Como Caracter
+	
+    
+    Repetir
+        
+        Escribir "Ingrese un carácter: "
+        Leer caracter  
+		
+        
+        Si caracter <> "D" Entonces
+          
+            Escribir "El carácter ingresado es incorrecto. Intente nuevamente."
+        FinSi  
+		
+		
+    Hasta Que caracter = "D"
+	
+    
+    Escribir "¡Carácter correcto ingresado!"
+
+FinAlgoritmo
