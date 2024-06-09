@@ -1,0 +1,22 @@
+Algoritmo SumarPositivosyNegativos
+	definir num, sumaPositivos, sumaNegativos como entero
+	sumaPositivos <-0
+	SumaNegativos <-0
+	
+	
+	para i <- 1 hasta 5 con paso 1 hacer 
+		// Generar un número aleatorio entre -100 y 100
+		num <-Aleatorio(-100, 100)
+		
+		si num >0 Entonces
+			
+			sumaPositivos<- sumaPositivos + num
+			sino 
+				sumaNegativos <- suumaNegativos + num 
+				
+		FinSi
+		fin para 
+		escribir "La suma de los números positivos es: ", sumaPositivos
+		escribir "La suma de los números negativos es: ", sumaNegativos
+		
+FinAlgoritmo
