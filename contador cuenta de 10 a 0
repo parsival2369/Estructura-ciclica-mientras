@@ -1,0 +1,17 @@
+Algoritmo cuentade10a0
+	Definir contador como entero 
+	contador <-10
+	
+	mientras (contador >= 0) hacer 
+		escribir "T -", contador 
+		
+		contador <- contador -1 
+
+		
+	FinMientras
+	
+	escribir "Lanzamiento"
+	
+	
+	
+FinAlgoritmo
