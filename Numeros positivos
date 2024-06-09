@@ -1,0 +1,31 @@
+Algoritmo sumarNumerosPositivos
+    
+    definir numero, sumaTotal, contadorNumeros, continuar como entero
+    sumaTotal <- 0
+    contadorNumeros <- 0
+    continuar <- 1 
+	
+    
+    mientras (continuar = 1) hacer
+        
+        escribir "Ingrese un número positivo: "
+        leer numero
+        
+        
+        si (numero > 0) entonces
+            
+            sumaTotal <- sumaTotal + numero
+            
+            contadorNumeros <- contadorNumeros + 1
+        sino
+            escribir "El número ingresado no es positivo. Inténtelo de nuevo."
+        fin si
+        
+        
+        escribir "¿Desea ingresar otro número? (1: Sí, 0: No): "
+        leer continuar
+    fin mientras
+
+    escribir "La suma total de los números positivos es: ", sumaTotal
+    escribir "La cantidad de números ingresados es: ", contadorNumeros
+FinAlgoritmo
